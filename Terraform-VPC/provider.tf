@@ -6,16 +6,16 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "terraform-remote-backend-s3-save"
+    bucket = "gitlab-actions3-my01"
     key    = "dev/terraform.tfstate"
-    region = "ap-south-1"
+    region = "us-east-1"
   }
 }
 
 
 provider "aws" {
   # Configuration options
-  region = "ap-south-1"
+  region = "us-east-1"
 }
 
 
